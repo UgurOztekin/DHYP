@@ -699,14 +699,6 @@
     <Content Include="Content\js\src\widgets.js" />
     <Content Include="Content\js\tooltips.js" />
     <Content Include="Content\js\widgets.js" />
-    <Content Include="Content\node_modules\bootstrap.min.js" />
-    <Content Include="Content\node_modules\Chart.min.js" />
-    <Content Include="Content\node_modules\coreui.min.js" />
-    <Content Include="Content\node_modules\custom-tooltips.min.js" />
-    <Content Include="Content\node_modules\main.js" />
-    <Content Include="Content\node_modules\pace.min.js" />
-    <Content Include="Content\node_modules\perfect-scrollbar.min.js" />
-    <Content Include="Content\node_modules\popper.min.js" />
     <Content Include="Content\vendors\pace-progress\css\pace.css" />
     <Content Include="Content\vendors\pace-progress\css\pace.min.css" />
     <Content Include="favicon.ico" />
