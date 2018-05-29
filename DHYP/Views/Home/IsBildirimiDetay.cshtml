@@ -1,0 +1,481 @@
+﻿
+@{
+    ViewBag.Title = "IsBildirimiDetay";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section css{
+<link href="~/Content/css/timeline.css" rel="stylesheet" />
+}
+
+<div class="row">
+    <div class="col-sm-12">
+        <div class="card">
+            <div class="card-header">
+                <strong>ISB-00024 İş</strong>
+                <small>Bildirimi</small>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="form-group col-sm-3 border-dotted">
+                        <div class="row">
+                            <div class="col-md-2">
+                                <i class="cui-user icons font-3xl d-block m-t-11"></i>
+                            </div>
+                            <div class="col-md-10">
+                                <h6>Oluşturan</h6>
+                                <p>Şule Özçeltik</p>
+                            </div>
+                        </div>
+                        <div class="row m-t-11">
+                            <div class="col-md-2">
+                                <i class="icon-location-pin icons font-2xl d-block m-t-11"></i>
+                            </div>
+                            <div class="col-md-10">
+                                <h6>Lokasyon</h6>
+                                <p>Manisa Şubesi</p>
+                            </div>
+                        </div>
+                        <div class="row m-t-11">
+                            <div class="col-md-2">
+                                <i class="icon-calendar icons font-2xl d-block m-t-11"></i>
+                            </div>
+                            <div class="col-md-10">
+                                <h6>Oluşturma Tarihi</h6>
+                                <p>15.05.2018 15:25</p>
+                            </div>
+                        </div>
+                        <div class="seperator"></div>
+                    </div>
+                    <div class="form-group col-sm-6 border-dotted">
+                        <div class="row">
+                            <div class="col-md-1">
+                                <i class="fa fa-edit fa-2x m-t-11"></i>
+                            </div>
+                            <div class="col-md-11">
+                                <h6>Açıklama</h6>
+                                <h5>Klima su akıtıyor.</h5>
+                                <p>Klima 5 saat çalıştıktan sonra su damlatıyor. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="row m-t-11">
+                            <div class="col-md-2">
+                                <i class="fa fa-gear fa-2x m-t-11"></i>
+                            </div>
+                            <div class="col-md-10">
+                                <h6>Servis Birimi</h6>
+                                <p>Mekanik</p>
+                            </div>
+                        </div>
+                        <div class="row m-t-11">
+                            <div class="offset-md-2 col-md-10">
+                                <h6>Kategori</h6>
+                                <p>İklimlendirme Sistemleri</p>
+                            </div>
+                        </div>
+                        <div class="row m-t-11">
+                            <div class="offset-md-2 col-md-10">
+                                <h6>Alt Kategori</h6>
+                                <p>Su Arızası</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--/.row-->
+            </div>
+        </div>
+    </div>
+    <!--/.col-->
+</div>
+<div class="row">
+    <div class="col">
+        <ul class="nav nav-pills mb-1" id="pills-tab" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active show" id="pills-home-tab" data-toggle="pill" href="#pills-employee" role="tab" aria-controls="pills-employee" aria-selected="false">Personel</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="pills-product-detail-tab" data-toggle="pill" href="#pills-product-detail" role="tab" aria-controls="pills-product-detail" aria-selected="false">Ürün Detayı</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="pills-process-tab" data-toggle="pill" href="#pills-process" role="tab" aria-controls="pills-process" aria-selected="true">Süreç</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="pills-solution-tab" data-toggle="pill" href="#pills-solution" role="tab" aria-controls="pills-solution" aria-selected="true">Çözüm & Hakediş</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="pills-history-tab" data-toggle="pill" href="#pills-history" role="tab" aria-controls="pills-history" aria-selected="true">Geçmiş</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="pills-notes-tab" data-toggle="pill" href="#pills-notes" role="tab" aria-controls="pills-notes" aria-selected="true">Notlar</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="pills-docs-tab" data-toggle="pill" href="#pills-docs" role="tab" aria-controls="pills-docs" aria-selected="true">Dokümanlar</a>
+            </li>
+        </ul>
+        <div class="tab-content m-b-20" id="pills-tabContent">
+            <div class="tab-pane fade active show" id="pills-employee" role="tabpanel" aria-labelledby="pills-employee-tab">
+                <div class="row">
+                    <div class="col-md-2 text-center">
+                        <i class="cui-user icons d-block m-t-32 big-icon icon-grey"></i>
+                    </div>
+                    <div class="col-md-10">
+                        <div class="row">
+                            <div class="form-group col-sm-4">
+                                <label for="ccmonth">Lokasyon</label>
+                                <input class="form-control" value="Beşiktaş Şubesi" />
+                            </div>
+                            <div class="form-group col-sm-4">
+                                <label for="ccmonth">Personel Adı</label>
+                                <input class="form-control" value="Şule Özçeltik" />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-sm-4">
+                                <label for="ccmonth">Departman</label>
+                                <input class="form-control" value="Şube Yönetimi" />
+                            </div>
+                            <div class="form-group col-sm-4">
+                                <label for="ccmonth">Görevi</label>
+                                <input class="form-control" value="Şube Operasyonları Yöneticisi" />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h2>İletişim Bilgileri</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-2 text-center">
+                        <i class="fa fa-phone m-t-32 big-icon icon-grey"></i>
+                    </div>
+                    <div class="col-md-10">
+                        <div class="row">
+                            <div class="form-group col-sm-4">
+                                <label for="ccmonth">Gsm</label>
+                                <input class="form-control" value="Beşiktaş Şubesi" />
+                            </div>
+                            <div class="form-group col-sm-4">
+                                <label for="ccmonth">Tel</label>
+                                <input class="form-control" value="Şule Özçeltik" />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-sm-4">
+                                <label for="ccmonth">E-posta</label>
+                                <input class="form-control" value="Şube Yönetimi" />
+                            </div>
+                            <div class="form-group col-sm-4">
+                                <label for="ccmonth">Fax</label>
+                                <input class="form-control" value="Şube Operasyonları Yöneticisi" />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-8">
+                                <button type="button" class="btn btn-sm btn-primary pull-right"><i class="fa fa-save"></i> Kaydet</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+         
+            </div>
+            <div class="tab-pane fade" id="pills-product-detail" role="tabpanel" aria-labelledby="pills-product-detail-tab">
+                <div class="row">
+                    <div class="col-md-2 text-center">
+                        <i class="fa fa-tag m-t-32 big-icon icon-grey"></i>
+                    </div>
+                    <div class="col-md-10">
+                        <div class="row">
+                            <div class="form-group col-sm-4">
+                                <label for="ccmonth">Barkod</label>
+                                <input class="form-control" value="Beşiktaş Şubesi" />
+                            </div>
+                            <div class="form-group col-sm-4 m-t-32">
+                                <div class="form-check checkbox">
+                                    <input class="form-check-input" type="checkbox" value="" id="check1">
+                                    <label class="form-check-label" for="check1">
+                                        Demirbaşa Tabi
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-sm-4">
+                                <label for="ccmonth">Grup</label>
+                                <select class="form-control" id="ccmonth">
+                                    <option>Seçiniz</option>
+                                    <option>Grup 1</option>
+                                    <option>Grup 2</option>
+                                    <option>Grup 3</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-sm-4">
+                                <label for="ccmonth">Marka</label>
+                                <select class="form-control" id="ccmonth">
+                                    <option>Seçiniz</option>
+                                    <option>Marka 1</option>
+                                    <option>Marka 2</option>
+                                    <option>Marka 3</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-sm-4">
+                                <label for="ccmonth">Model</label>
+                                <select class="form-control" id="ccmonth">
+                                    <option>Seçiniz</option>
+                                    <option>Model 1</option>
+                                    <option>Model 2</option>
+                                    <option>Model 3</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h2>İletişim Bilgileri</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-2 text-center">
+                        <i class="fa fa-barcode m-t-32 big-icon icon-grey"></i>
+                    </div>
+                    <div class="col-md-10">
+                        <div class="row">
+                            <div class="form-group col-sm-4">
+                                <label for="ccmonth">Seri No</label>
+                                <input class="form-control" value="" />
+                            </div>
+                            <div class="form-group col-sm-4">
+                                <label for="ccmonth">Part No</label>
+                                <input class="form-control" value="" />
+                            </div>
+                            <div class="form-group col-sm-2">
+                                <label for="ccmonth">Ref No</label>
+                                <input class="form-control" value="" />
+                            </div>
+                            <div class="form-group col-sm-2">
+                                <label for="ccmonth">Ext No</label>
+                                <input class="form-control" value="" />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-sm-4">
+                                <label for="ccmonth">Grup</label>
+                                <select class="form-control" id="ccmonth">
+                                    <option>Seçiniz</option>
+                                    <option>Grup 1</option>
+                                    <option>Grup 2</option>
+                                    <option>Grup 3</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-sm-4">
+                                <label for="ccmonth">Marka</label>
+                                <select class="form-control" id="ccmonth">
+                                    <option>Seçiniz</option>
+                                    <option>Marka 1</option>
+                                    <option>Marka 2</option>
+                                    <option>Marka 3</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-sm-4">
+                                <label for="ccmonth">Model</label>
+                                <select class="form-control" id="ccmonth">
+                                    <option>Seçiniz</option>
+                                    <option>Model 1</option>
+                                    <option>Model 2</option>
+                                    <option>Model 3</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h2>İletişim Bilgileri</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-2 text-center">
+                        <i class="fa fa-check-square-o m-t-32 big-icon icon-grey"></i>
+                    </div>
+                    <div class="col-md-10">
+                        <div class="row">
+                            <div class="form-group col-sm-4">
+                                <label for="ccmonth">Fiziksel Durum</label>
+                                <select class="form-control" id="ccmonth">
+                                    <option>Seçiniz</option>
+                                    <option>Grup 1</option>
+                                    <option>Grup 2</option>
+                                    <option>Grup 3</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-sm-4">
+                                <label for="ccmonth">Kullanım Durumu</label>
+                                <select class="form-control" id="ccmonth">
+                                    <option>Seçiniz</option>
+                                    <option>Grup 1</option>
+                                    <option>Grup 2</option>
+                                    <option>Grup 3</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-sm-4">
+                                <label for="ccmonth">Sahiplik Durumu</label>
+                                <select class="form-control" id="ccmonth">
+                                    <option>Seçiniz</option>
+                                    <option>Grup 1</option>
+                                    <option>Grup 2</option>
+                                    <option>Grup 3</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <button type="button" class="btn btn-sm btn-primary pull-right"><i class="fa fa-save"></i> Kaydet</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="pills-process" role="tabpanel" aria-labelledby="pills-process-tab">
+     
+            </div>
+            <div class="tab-pane fade" id="pills-solution" role="tabpanel" aria-labelledby="pills-solution-tab">
+                <div class="row">
+                    <div class="col-md-3 text-center p-t-l-20-percent">
+                        <i class="fa fa-comments-o fa-4x icon-grey"></i>
+                    </div>
+                    <div class="col-md-6">
+                        <textarea id="textarea-input" name="textarea-input" rows="9" class="form-control" placeholder="Notunuz.."></textarea>
+                        <div class="col-md-3 m-t-12">
+                            <button class="btn btn-sm btn-block btn-info active">Gönder</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="tab-pane fade" id="pills-history" role="tabpanel" aria-labelledby="pills-history-tab">
+                    <section id="cd-timeline" class="cd-container">
+                        <div class="cd-timeline-block">
+                            <div class="cd-timeline-img"></div>
+                            <div class="cd-timeline-content">
+                                <h2>İş bildirimi oluşturuldu. (ISB-00024)</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut.</p>
+                                <div class="row">
+                                    <div class="col-4 col-md-2">
+                                        <img src="~/Content/img/avatars/9.jpg" class="img-responsive img-circle" />
+                                    </div>
+                                    <div class="col-8 col-md-6">Ali Çalışkan</div>
+                                    <div class="col-12 col-md-4">02.05.2018 12.15</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="cd-timeline-block">
+                            <div class="cd-timeline-img"></div>
+                            <div class="cd-timeline-content">
+                                <h2>Çözüm onayı verildi.</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde?</p>
+                                <div class="row">
+                                    <div class="col-4 col-md-2">
+                                        <img src="~/Content/img/avatars/9.jpg" class="img-responsive img-circle" />
+                                    </div>
+                                    <div class="col-8 col-md-6">Ali Çalışkan</div>
+                                    <div class="col-12 col-md-4">02.05.2018 12.15</div>
+                                </div>
+                            </div> 
+                        </div> 
+
+                        <div class="cd-timeline-block">
+                            <div class="cd-timeline-img cd-picture"></div> 
+                            <div class="cd-timeline-content">
+                                <h2>İşbildirimi kapandı.</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, obcaecati, quisquam id molestias eaque asperiores voluptatibus cupiditate error assumenda delectus odit similique earum voluptatem doloremque dolorem ipsam quae rerum quis. Odit, itaque, deserunt corporis vero ipsum nisi eius odio natus ullam provident pariatur temporibus quia eos repellat consequuntur perferendis enim amet quae quasi repudiandae sed quod veniam dolore possimus rem voluptatum eveniet eligendi quis fugiat aliquam sunt similique aut adipisci.</p>
+                                <div class="row">
+                                    <div class="col-4 col-md-2">
+                                        <img src="~/Content/img/avatars/9.jpg" class="img-responsive img-circle" />
+                                    </div>
+                                    <div class="col-8 col-md-6">Ali Çalışkan</div>
+                                    <div class="col-12 col-md-4">02.05.2018 12.15</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="cd-timeline-block">
+                            <div class="cd-timeline-img cd-location"></div> 
+                            <div class="cd-timeline-content">
+                                <h2>Faturalandırma ve raporlama yapıldı.</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut.</p>
+                                <div class="row">
+                                    <div class="col-4 col-md-2">
+                                        <img src="~/Content/img/avatars/9.jpg" class="img-responsive img-circle" />
+                                    </div>
+                                    <div class="col-8 col-md-6">Ali Çalışkan</div>
+                                    <div class="col-12 col-md-4">02.05.2018 12.15</div>
+                                </div>
+                            </div> 
+                        </div> 
+
+                        <div class="cd-timeline-block">
+                            <div class="cd-timeline-img"></div> 
+                            <div class="cd-timeline-content">
+                                <h2>Title of section 5</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum.</p>
+                                <div class="row">
+                                    <div class="col-4 col-md-2">
+                                        <img src="~/Content/img/avatars/9.jpg" class="img-responsive img-circle" />
+                                    </div>
+                                    <div class="col-8 col-md-6">Ali Çalışkan</div>
+                                    <div class="col-12 col-md-4">02.05.2018 12.15</div>
+                                </div>
+                            </div> 
+                        </div> 
+
+                        <div class="cd-timeline-block">
+                            <div class="cd-timeline-img"></div>
+                            <div class="cd-timeline-content">
+                                <h2>Final Section</h2>
+                                <p>This is the content of the last section</p>
+                                <div class="row">
+                                    <div class="col-4 col-md-2">
+                                        <img src="~/Content/img/avatars/9.jpg" class="img-responsive img-circle" />
+                                    </div>
+                                    <div class="col-8 col-md-6">Ali Çalışkan</div>
+                                    <div class="col-12 col-md-4">02.05.2018 12.15</div>
+                                </div>
+                            </div> 
+                        </div>
+                    </section>
+            </div>
+            <div class="tab-pane fade" id="pills-notes" role="tabpanel" aria-labelledby="pills-notes-tab">
+                <div class="row">
+                    <div class="col-md-3 text-center p-t-l-20-percent">
+                        <i class="fa fa-comments-o fa-4x icon-grey"></i>
+                    </div>
+                    <div class="col-md-6">
+                        <textarea id="textarea-input" name="textarea-input" rows="9" class="form-control" placeholder="Notunuz.."></textarea>
+                        <div class="employeeNote">
+                            <div class="col-md-2">
+                                <img class="img-fluid img-circle" src="~/Content/img/avatars/9.jpg" />
+                            </div>
+                            <div class="col-md-7">
+                                <p>Ali Çalışkan</p>
+                            </div>
+                            <div class="col-md-3 m-t-12">
+                                <button class="btn btn-sm btn-block btn-info active">Gönder</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="pills-docs" role="tabpanel" aria-labelledby="pills-docs-tab">
+
+
+
+            </div>
+        </div>
+    </div>
+</div>
+

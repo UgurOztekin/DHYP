@@ -151,10 +151,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Content\bootstrap.css" />
-    <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\css\coreui-icons.min.css" />
+    <Content Include="Content\css\custom.css" />
     <Content Include="Content\css\flag-icon.min.css" />
+    <Content Include="Content\css\timeline.css" />
     <Content Include="Content\flags\1x1\ad.svg" />
     <Content Include="Content\flags\1x1\ae.svg" />
     <Content Include="Content\flags\1x1\af.svg" />
@@ -682,6 +682,8 @@
     <Content Include="Content\img\avatars\6.jpg" />
     <Content Include="Content\img\avatars\7.jpg" />
     <Content Include="Content\img\avatars\8.jpg" />
+    <Content Include="Content\img\avatars\9.jpeg" />
+    <Content Include="Content\img\avatars\9.jpg" />
     <Content Include="Content\img\brand\logo.svg" />
     <Content Include="Content\img\brand\sygnet.svg" />
     <Content Include="Content\img\favicon.ico" />
@@ -712,7 +714,6 @@
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
-    <Content Include="Content\Site.css" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="ApplicationInsights.config">
@@ -771,6 +772,8 @@
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Home\yeniIsBildirimi.cshtml" />
+    <Content Include="Views\Home\IsBildirimiDetay.cshtml" />
+    <Content Include="Views\Home\IsBildirimListesi.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
