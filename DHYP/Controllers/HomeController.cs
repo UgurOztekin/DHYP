@@ -18,15 +18,20 @@ namespace DHYP.Controllers
       return View();
     }
 
-        public ActionResult IsBildirimiDetay()
-        {
-            return View();
-        }
+   public ActionResult IsBildirimiDetay()
+   {
+     return View();
+   }
 
-        public ActionResult IsBildirimListesi()
-        {
-            return View();
-        }
+   public ActionResult IsBildirimListesi()
+   {
+     return View();
+   }
+
+   public ActionResult TeknikPersonelIsBildirimListesi()
+   {
+     return View();
+   }
 
 
 

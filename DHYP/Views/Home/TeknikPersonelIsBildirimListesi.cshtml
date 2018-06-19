@@ -1,6 +1,6 @@
 ﻿
 @{
-    ViewBag.Title = "IsBildirimListesi";
+    ViewBag.Title = "Teknik Personel IsBildirim Listesi";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 <div class="row">
@@ -8,8 +8,9 @@
         <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
             <div class="btn-group m-b-20" role="group" aria-label="Basic example">
                 <button type="button" class="btn btn-primary"><i class="fa fa-arrow-left"></i></button>
-                <button type="button" class="btn btn-primary"><i class="fa fa-plus"></i> Yeni</button>
+                <a href="/Home/yeniIsBildirimi" class="btn btn-primary"><i class="fa fa-plus"></i> Yeni</a>
                 <a href="/Home/IsBildirimiDetay" class="btn btn-primary"><i class="fa fa-pencil-square-o"></i> Detay</a>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal3"><i class="fa fa-mail-forward"></i> Yönlendir</button>
             </div>
             <div class="input-group m-l-10">
                 <div class="dropdown">
@@ -17,10 +18,8 @@
                         <i class="fa fa-navicon"></i>
                     </button>
                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" data-toggle="modal" data-target="#exampleModal2" href="#">Kapat</a>
                         <a class="dropdown-item" data-toggle="modal" data-target="#exampleModal" href="#">Beklemeye Al</a>
-                        <a class="dropdown-item" data-toggle="modal" data-target="#exampleModal2" href="#">İleri Tarihe Planla</a>
-                        <a class="dropdown-item" href="#">İptal Et</a>
-                        <a class="dropdown-item" href="#">Tedarikçiye Yönlendir</a>
                     </div>
                 </div>
             </div>
@@ -101,6 +100,7 @@
         </div>
     </div>
 </div>
+
 <div class="row">
     <div class="col-md-12">
         <div class="card">
@@ -110,8 +110,8 @@
                         <tr>
                             <th></th>
                             <th>No</th>
-                            <th>Personel</th>
-                            <th>Servis Bildirimi</th>
+                            <th>Bölge</th>
+                            <th>Lokasyon</th>
                             <th>Kategori</th>
                             <th>Alt Kategori</th>
                             <th>Durum</th>
@@ -124,8 +124,8 @@
                         <tr>
                             <td><input type="checkbox" value="" id="check1"></td>
                             <td><i class="fa fa-exclamation-triangle orange"></i> ISB-000223</td>
-                            <td>Mehmet Yılmaz</td>
-                            <td>Mekanik</td>
+                            <td>Ege Bölgesi</td>
+                            <td>Manisa Şubesi</td>
                             <td>İklimlendirme</td>
                             <td>Klima Arızası</td>
                             <td>Tedarikçiye yönlendirildi</td>
@@ -136,8 +136,8 @@
                         <tr>
                             <td><input type="checkbox" value="" id="check1"></td>
                             <td><i class="fa fa-exclamation-triangle blue"></i> ISB-000223</td>
-                            <td>Ali Candan</td>
-                            <td>İnşaat</td>
+                            <td>Anadolu1 Bölge</td>
+                            <td>Sinop Şubesi</td>
                             <td>Elektrik</td>
                             <td>Elektrik Arızası</td>
                             <td>Tedarikçiye yönlendirildi</td>
@@ -147,12 +147,12 @@
                         </tr>
                         <tr>
                             <td><input type="checkbox" value="" id="check1"></td>
-                            <td><i class="fa fa-exclamation-triangle blue"></i> ISB-000223</td>
-                            <td>Yeşim Mercan</td>
-                            <td>Mekanik</td>
+                            <td><i class="fa fa-exclamation-triangle orange"></i> ISB-000223</td>
+                            <td>Ege Bölgesi</td>
+                            <td>İzmir Şubesi</td>
                             <td>İklimlendirme</td>
                             <td>Havalandırma Arızası</td>
-                            <td>Tedarikçiye yönlendirildi</td>
+                            <td>Kapandı</td>
                             <td>2012/02/01</td>
                             <td>2012/02/01</td>
                             <td>2012/02/01</td>
@@ -160,8 +160,8 @@
                         <tr>
                             <td><input type="checkbox" value="" id="check1"></td>
                             <td><i class="fa fa-exclamation-triangle blue"></i> ISB-000223</td>
-                            <td>2012/03/01</td>
-                            <td>Mekanik</td>
+                            <td>Marmara Bölgesi</td>
+                            <td>İstanbul Beşiktaş</td>
                             <td>Elektrik</td>
                             <td>Su Akıtma</td>
                             <td>Tedarikçiye yönlendirildi</td>
@@ -171,12 +171,12 @@
                         </tr>
                         <tr>
                             <td><input type="checkbox" value="" id="check1"></td>
-                            <td><i class="fa fa-exclamation-triangle orange"></i> ISB-000223</td>
-                            <td>Can Alkan</td>
-                            <td>İnşaat</td>
+                            <td><i class="fa fa-exclamation-triangle blue"></i> ISB-000223</td>
+                            <td>Ege Bölge</td>
+                            <td>Aydın Şubesi</td>
                             <td>Mekanik</td>
                             <td>Gider Tıkanması</td>
-                            <td>Tedarikçiye yönlendirildi</td>
+                            <td>Yeni</td>
                             <td>2012/02/01</td>
                             <td>2012/02/01</td>
                             <td>2012/02/01</td>
@@ -250,10 +250,10 @@
 
 <!-- Modal 2-->
 <div class="modal fade bd-example-modal-lg" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel2" aria-hidden="true">
-    <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="close"><i class="fa fa-hourglass-start"></i> ISB-000021 - BEKLEMEYE AL</h5>
+                <h5 class="modal-title" id="close"><i class="fa fa-check-square-o"></i> ISB-000021 - KAPAT</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -262,92 +262,131 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
+                            <label>Açıklama giriniz.</label>
+                            <textarea class="form-control">
+                                
+                            </textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary">İŞ BİLDİRİMİNİ KAPAT</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal 3-->
+<div class="modal fade bd-example-modal-lg" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel3" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="close"><i class="fa fa-mail-forward"></i> ISB-000021 - YÖNLENDİR</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-10">
+                            <label>Lütfen iş bildiriminin yönlendirileceği firmayı seçiniz.</label>
+                        </div>
+                        <div class="col-md-2">
+                            <button type="button" class="btn btn-primary pull-right" data-toggle="collapse" data-target="#forwardFilter" aria-expanded="false" aria-controls="forwardFilter"><i class="fa fa-filter"></i> Filtre</button>
+                        </div>
+                        <div class="col-md-12 m-t-11">
+                            <div class="collapse" id="forwardFilter">
+                                <div class="card card-body">
+                                    <div class="row">
+                                        <div class="form-group col-sm-4">
+                                            <label for="ccmonth">Bölge</label>
+                                            <select class="form-control">
+                                                <option>Ege Bölgesi</option>
+                                                <option>Marmara Bölgesi</option>
+                                                <option>Akdeniz Bölgesi</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group col-sm-4">
+                                            <label for="ccmonth">Firma Adı</label>
+                                            <input class="form-control" value="" />
+                                        </div>
+                                        <div class="form-group col-sm-4">
+                                            <label for="ccmonth">Servis Birimi</label>
+                                            <select class="form-control">
+                                                <option>Mekanik</option>
+                                                <option>İnşaat</option>
+                                                <option>Elektrik</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
                             <table class="table table-responsive-sm table-striped">
                                 <thead>
                                     <tr>
                                         <th></th>
                                         <th>Bölge</th>
-                                        <th>Personel</th>
-                                        <th>Servis Bildirimi</th>
-                                        <th>Kategori</th>
-                                        <th>Alt Kategori</th>
-                                        <th>Durum</th>
-                                        <th>Oluş. Trh.</th>
-                                        <th>Yönlen. Trh.</th>
-                                        <th>Çözüm Trh.</th>
+                                        <th>Firma Adı</th>
+                                        <th>İş Sayısı</th>
+                                        <th>Servis Birimi</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
                                         <td><input type="checkbox" value="" id="check1"></td>
-                                        <td><i class="fa fa-exclamation-triangle"></i> ISB-000223</td>
-                                        <td>Mehmet Yılmaz</td>
+                                        <td>Ege Bölgesi</td>
+                                        <td>Mert Klima A.Ş.</td>
+                                        <td><span class="badge badge-success">12</span></td>
                                         <td>Mekanik</td>
-                                        <td>İklimlendirme</td>
-                                        <td>Klima Arızası</td>
-                                        <td>Tedarikçiye yönlendirildi</td>
-                                        <td>2012/02/01</td>
-                                        <td>2012/02/01</td>
-                                        <td>2012/01/01</td>
                                     </tr>
                                     <tr>
                                         <td><input type="checkbox" value="" id="check1"></td>
-                                        <td><i class="fa fa-exclamation-triangle"></i> ISB-000223</td>
-                                        <td>Ali Candan</td>
-                                        <td>İnşaat</td>
-                                        <td>Elektrik</td>
-                                        <td>Elektrik Arızası</td>
-                                        <td>Tedarikçiye yönlendirildi</td>
-                                        <td>2012/02/01</td>
-                                        <td>2012/02/01</td>
-                                        <td>2012/02/01</td>
+                                        <td>Ege Bölgesi</td>
+                                        <td>Mert Klima A.Ş.</td>
+                                        <td><span class="badge badge-success">9</span></td>
+                                        <td>Mekanik</td>
                                     </tr>
                                     <tr>
                                         <td><input type="checkbox" value="" id="check1"></td>
-                                        <td><i class="fa fa-exclamation-triangle"></i> ISB-000223</td>
-                                        <td>Yeşim Mercan</td>
+                                        <td>Ege Bölgesi</td>
+                                        <td>Mert Klima A.Ş.</td>
+                                        <td><span class="badge badge-success">5</span></td>
                                         <td>Mekanik</td>
-                                        <td>İklimlendirme</td>
-                                        <td>Havalandırma Arızası</td>
-                                        <td>Tedarikçiye yönlendirildi</td>
-                                        <td>2012/02/01</td>
-                                        <td>2012/02/01</td>
-                                        <td>2012/02/01</td>
                                     </tr>
                                     <tr>
                                         <td><input type="checkbox" value="" id="check1"></td>
-                                        <td><i class="fa fa-exclamation-triangle"></i> ISB-000223</td>
-                                        <td>2012/03/01</td>
+                                        <td>Ege Bölgesi</td>
+                                        <td>Mert Klima A.Ş.</td>
+                                        <td><span class="badge badge-success">3</span></td>
                                         <td>Mekanik</td>
-                                        <td>Elektrik</td>
-                                        <td>Su Akıtma</td>
-                                        <td>Tedarikçiye yönlendirildi</td>
-                                        <td>2012/02/01</td>
-                                        <td>2012/02/01</td>
-                                        <td>2012/02/01</td>
                                     </tr>
                                     <tr>
                                         <td><input type="checkbox" value="" id="check1"></td>
-                                        <td><i class="fa fa-exclamation-triangle"></i> ISB-000223</td>
-                                        <td>Can Alkan</td>
-                                        <td>İnşaat</td>
+                                        <td>Ege Bölgesi</td>
+                                        <td>Mert Klima A.Ş.</td>
+                                        <td><span class="badge badge-success">7</span></td>
                                         <td>Mekanik</td>
-                                        <td>Gider Tıkanması</td>
-                                        <td>Tedarikçiye yönlendirildi</td>
-                                        <td>2012/02/01</td>
-                                        <td>2012/02/01</td>
-                                        <td>2012/02/01</td>
                                     </tr>
                                 </tbody>
                             </table>
                         </div>
                     </div>
-
-
                 </div>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-primary">BEKLEMEYE AL</button>
+                <div class="form-check checkbox float-left">
+                    <input class="form-check-input" type="checkbox" value="" id="check1">
+                    <label class="form-check-label" for="check1">
+                        Option 1
+                    </label>
+                </div>
+                <button type="button" class="btn btn-primary">TAMAM</button>
             </div>
         </div>
     </div>

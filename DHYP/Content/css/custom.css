@@ -11,9 +11,13 @@ body {
     color: #333;
 }
 
-/* helper classses */
-.margin-top-20 {
-    margin-top: 20px;
+.table th, .table td {
+    font-size: .875rem;
+    padding:0.70rem 0.50rem;
+}
+
+.table th, .table td {
+border-top: none;
 }
 
 .margin-bottom-20 {
@@ -305,15 +309,22 @@ button:focus {
 .blue {
     color: #88b4d6;
 }
-
+.orange {
+    color: #f06d16;
+}
 .btn-group .btn + .btn, .btn-group .btn + .btn-group, .btn-group .btn-group + .btn, .btn-group .btn-group + .btn-group, .btn-group-vertical .btn + .btn, .btn-group-vertical .btn + .btn-group, .btn-group-vertical .btn-group + .btn, .btn-group-vertical .btn-group + .btn-group {
     margin-left: 1px;
+}
+
+.modal-body {
+    padding: 1rem 0;
 }
 
 /*Margin Paddings*/
 .p-l-0 {
     padding-left: 0;
 }
+
 
 .p-r-0 {
     padding-right: 0;
@@ -330,6 +341,9 @@ button:focus {
     margin-top: 11px;
 }
 
+.m-l-10 {
+    margin-left: 10px;
+}
 .m-b-20{
     margin-bottom:20px;
 }
