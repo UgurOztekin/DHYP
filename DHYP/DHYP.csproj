@@ -775,6 +775,7 @@
     <Content Include="Views\Home\IsBildirimiDetay.cshtml" />
     <Content Include="Views\Home\IsBildirimListesi.cshtml" />
     <Content Include="Views\Home\TeknikPersonelIsBildirimListesi.cshtml" />
+    <Content Include="Views\Home\isKalemListesi.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

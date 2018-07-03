@@ -33,7 +33,10 @@ namespace DHYP.Controllers
      return View();
    }
 
-
+   public ActionResult isKalemListesi()
+    {
+     return View();
+    }
 
         public ActionResult About()
     {

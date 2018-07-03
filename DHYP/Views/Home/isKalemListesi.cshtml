@@ -1,0 +1,190 @@
+﻿
+@{
+    ViewBag.Title = "isKalemListesi";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="row">
+    <div class="col">
+        <ul class="nav nav-pills" id="pills-tab" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active show" id="pills-home-tab" data-toggle="pill" href="#pills-employee" role="tab" aria-controls="pills-employee" aria-selected="false">Kalem Listesi</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="pills-product-detail-tab" data-toggle="pill" href="#pills-product-detail" role="tab" aria-controls="pills-product-detail" aria-selected="false">İş birimi</a>
+            </li>
+        </ul>
+        <div class="tab-content m-b-20" id="pills-tabContent">
+            <div class="tab-pane fade active show" id="pills-employee" role="tabpanel" aria-labelledby="pills-employee-tab">
+                <div class="row">
+                    <div class="col-md-12">
+
+                        <table class="table table-responsive-sm table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Kalem Numarası</th>
+                                    <th>Kalem Adı</th>
+                                    <th>Kalem Açıklaması</th>
+                                    <th>Birim</th>
+                                    <th>Fiyat</th>
+                                    <th>F. Başlangıç Trh.</th>
+                                    <th>F. Bitiş Trh.</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>0502202</td>
+                                    <td>Klima Bakımı</td>
+                                    <td>Klimalara yapılan üç aylık bakım.</td>
+                                    <td>Mekanik</td>
+                                    <td>4500 TL</td>
+                                    <td>05.06.2018</td>
+                                    <td>08.06.2018</td>
+                                </tr>
+                                <tr>
+                                    <td>0502202</td>
+                                    <td>Klima Bakımı</td>
+                                    <td>Klimalara yapılan üç aylık bakım.</td>
+                                    <td>Mekanik</td>
+                                    <td>4500 TL</td>
+                                    <td>05.06.2018</td>
+                                    <td>08.06.2018</td>
+                                </tr>
+                                <tr>
+                                    <td>0502202</td>
+                                    <td>Klima Bakımı</td>
+                                    <td>Klimalara yapılan üç aylık bakım.</td>
+                                    <td>Mekanik</td>
+                                    <td>4500 TL</td>
+                                    <td>05.06.2018</td>
+                                    <td>08.06.2018</td>
+                                </tr>
+                                <tr>
+                                    <td>0502202</td>
+                                    <td>Klima Bakımı</td>
+                                    <td>Klimalara yapılan üç aylık bakım.</td>
+                                    <td>Mekanik</td>
+                                    <td>4500 TL</td>
+                                    <td>05.06.2018</td>
+                                    <td>08.06.2018</td>
+                                </tr>
+                                <tr>
+                                    <td>0502202</td>
+                                    <td>Klima Bakımı</td>
+                                    <td>Klimalara yapılan üç aylık bakım.</td>
+                                    <td>Mekanik</td>
+                                    <td>4500 TL</td>
+                                    <td>05.06.2018</td>
+                                    <td>08.06.2018</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="tab-pane fade" id="pills-product-detail" role="tabpanel" aria-labelledby="pills-product-detail-tab">
+                <div class="row">
+                    <div class="col-sm-6 col-md-4">
+                        <div class="card">
+                            <div class="card-header">İş Birimi</div>
+                            <div class="card-body addWorkStation">
+                                <div class="row m-b-20">
+                                    <div class="col-md-10">
+                                        <input type="text" class="form-control" placeholder="İş birimi giriniz">
+                                    </div>
+                                    <div class="col-md-2">
+                                        <button class="btn btn-info pull-right cmdAdd" data-code="MAINCATEGORY">Ekle</button>
+                                    </div>
+                                </div>
+                                <ul class="catContainer">
+                                    <li><input class="main-category" type="radio" name="MAINCATEGORY"><label>  Gayri Menkul</label><span><i class="fa fa-pencil-square cmdEdit"></i> <i class="fa fa-trash cmdDelete"></i></span></li>
+                                    <li><input class="main-category" type="radio" name="MAINCATEGORY"><label>Teknoloji</label><span><i class="fa fa-pencil-square cmdEdit"></i> <i class="fa fa-trash cmdDelete"></i></span></li>
+                                    <li><input class="main-category" type="radio" name="MAINCATEGORY"><label>Bankacılık Hizmetleri</label><span><i class="fa fa-pencil-square cmdEdit"></i> <i class="fa fa-trash cmdDelete"></i></span></li>
+                                    <li><input class="main-category" type="radio" name="MAINCATEGORY"><label>Piyasa Veri &amp; Bilgileri</label><span><i class="fa fa-pencil-square cmdEdit"></i> <i class="fa fa-trash cmdDelete"></i></span></li>
+                                    <li><input class="main-category" type="radio" name="MAINCATEGORY"><label>İşlem Ücretleri</label><span><i class="fa fa-pencil-square cmdEdit"></i> <i class="fa fa-trash cmdDelete"></i></span></li>
+                                    <li><input class="main-category" type="radio" name="MAINCATEGORY"><label>Seyahat</label><span><i class="fa fa-pencil-square cmdEdit"></i> <i class="fa fa-trash cmdDelete"></i></span></li>
+                                    <li><input class="main-category" type="radio" name="MAINCATEGORY"><label>Profesyonel Hizmetler</label><span><i class="fa fa-pencil-square cmdEdit"></i> <i class="fa fa-trash cmdDelete"></i></span></li>
+                                    <li><input class="main-category" type="radio" name="MAINCATEGORY"><label>Sarf Malzemeler ve Genel Hizmetler</label><span><i class="fa fa-pencil-square cmdEdit"></i> <i class="fa fa-trash cmdDelete"></i></span></li>
+                                    <li><input class="main-category" type="radio" name="MAINCATEGORY"><label>İletişim ve Pazarlama</label><span><i class="fa fa-pencil-square cmdEdit"></i> <i class="fa fa-trash cmdDelete"></i></span></li>
+                                    <li><input class="main-category" type="radio" name="MAINCATEGORY"><label>Sigorta</label><span><i class="fa fa-pencil-square cmdEdit"></i> <i class="fa fa-trash cmdDelete"></i></span></li>
+                                    <li><input class="main-category" type="radio" name="MAINCATEGORY"><label>Yeniden Faturalanan Harcamalar</label><span><i class="fa fa-pencil-square cmdEdit"></i> <i class="fa fa-trash cmdDelete"></i></span></li>
+                                    <li><input class="main-category" type="radio" name="MAINCATEGORY"><label>Üretim</label><span><i class="fa fa-pencil-square cmdEdit"></i> <i class="fa fa-trash cmdDelete"></i></span></li>
+                                    <li><input class="main-category" type="radio" name="MAINCATEGORY"><label>Dağıtılamayan Harcamalar</label><span><i class="fa fa-pencil-square cmdEdit"></i> <i class="fa fa-trash cmdDelete"></i></span></li>
+                                    <li><input class="main-category" type="radio" name="MAINCATEGORY"><label>Non procurable</label><span><i class="fa fa-pencil-square cmdEdit"></i> <i class="fa fa-trash cmdDelete"></i></span></li>
+                                    <li><input class="main-category" type="radio" name="MAINCATEGORY"><label>yeni</label><span><i class="fa fa-pencil-square cmdEdit"></i> <i class="fa fa-trash cmdDelete"></i></span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <div class="card">
+                            <div class="card-header">İş Birimi</div>
+                            <div class="card-body addWorkStation">
+                                <div class="row m-b-20">
+                                    <div class="col-md-10">
+                                        <input type="text" class="form-control" placeholder="İş birimi giriniz">
+                                    </div>
+                                    <div class="col-md-2">
+                                        <button class="btn btn-info pull-right cmdAdd" data-code="MAINCATEGORY">Ekle</button>
+                                    </div>
+                                </div>
+                                <ul class="catContainer">
+                                    <li><input class="main-category" type="radio" name="MAINCATEGORY"><label>  Gayri Menkul</label><span><i class="fa fa-pencil-square cmdEdit"></i> <i class="fa fa-trash cmdDelete"></i></span></li>
+                                    <li><input class="main-category" type="radio" name="MAINCATEGORY"><label>Teknoloji</label><span><i class="fa fa-pencil-square cmdEdit"></i> <i class="fa fa-trash cmdDelete"></i></span></li>
+                                    <li><input class="main-category" type="radio" name="MAINCATEGORY"><label>Bankacılık Hizmetleri</label><span><i class="fa fa-pencil-square cmdEdit"></i> <i class="fa fa-trash cmdDelete"></i></span></li>
+                                    <li><input class="main-category" type="radio" name="MAINCATEGORY"><label>Piyasa Veri &amp; Bilgileri</label><span><i class="fa fa-pencil-square cmdEdit"></i> <i class="fa fa-trash cmdDelete"></i></span></li>
+                                    <li><input class="main-category" type="radio" name="MAINCATEGORY"><label>İşlem Ücretleri</label><span><i class="fa fa-pencil-square cmdEdit"></i> <i class="fa fa-trash cmdDelete"></i></span></li>
+                                    <li><input class="main-category" type="radio" name="MAINCATEGORY"><label>Seyahat</label><span><i class="fa fa-pencil-square cmdEdit"></i> <i class="fa fa-trash cmdDelete"></i></span></li>
+                                    <li><input class="main-category" type="radio" name="MAINCATEGORY"><label>Profesyonel Hizmetler</label><span><i class="fa fa-pencil-square cmdEdit"></i> <i class="fa fa-trash cmdDelete"></i></span></li>
+                                    <li><input class="main-category" type="radio" name="MAINCATEGORY"><label>Sarf Malzemeler ve Genel Hizmetler</label><span><i class="fa fa-pencil-square cmdEdit"></i> <i class="fa fa-trash cmdDelete"></i></span></li>
+                                    <li><input class="main-category" type="radio" name="MAINCATEGORY"><label>İletişim ve Pazarlama</label><span><i class="fa fa-pencil-square cmdEdit"></i> <i class="fa fa-trash cmdDelete"></i></span></li>
+                                    <li><input class="main-category" type="radio" name="MAINCATEGORY"><label>Sigorta</label><span><i class="fa fa-pencil-square cmdEdit"></i> <i class="fa fa-trash cmdDelete"></i></span></li>
+                                    <li><input class="main-category" type="radio" name="MAINCATEGORY"><label>Yeniden Faturalanan Harcamalar</label><span><i class="fa fa-pencil-square cmdEdit"></i> <i class="fa fa-trash cmdDelete"></i></span></li>
+                                    <li><input class="main-category" type="radio" name="MAINCATEGORY"><label>Üretim</label><span><i class="fa fa-pencil-square cmdEdit"></i> <i class="fa fa-trash cmdDelete"></i></span></li>
+                                    <li><input class="main-category" type="radio" name="MAINCATEGORY"><label>Dağıtılamayan Harcamalar</label><span><i class="fa fa-pencil-square cmdEdit"></i> <i class="fa fa-trash cmdDelete"></i></span></li>
+                                    <li><input class="main-category" type="radio" name="MAINCATEGORY"><label>Non procurable</label><span><i class="fa fa-pencil-square cmdEdit"></i> <i class="fa fa-trash cmdDelete"></i></span></li>
+                                    <li><input class="main-category" type="radio" name="MAINCATEGORY"><label>yeni</label><span><i class="fa fa-pencil-square cmdEdit"></i> <i class="fa fa-trash cmdDelete"></i></span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <div class="card">
+                            <div class="card-header">İş Birimi</div>
+                            <div class="card-body addWorkStation">
+                                <div class="row m-b-20">
+                                    <div class="col-md-10">
+                                        <input type="text" class="form-control" placeholder="İş birimi giriniz">
+                                    </div>
+                                    <div class="col-md-2">
+                                        <button class="btn btn-info pull-right cmdAdd" data-code="MAINCATEGORY">Ekle</button>
+                                    </div>
+                                </div>
+                                <ul class="catContainer">
+                                    <li><input class="main-category" type="radio" name="MAINCATEGORY"><label>  Gayri Menkul</label><span><i class="fa fa-pencil-square cmdEdit"></i> <i class="fa fa-trash cmdDelete"></i></span></li>
+                                    <li><input class="main-category" type="radio" name="MAINCATEGORY"><label>Teknoloji</label><span><i class="fa fa-pencil-square cmdEdit"></i> <i class="fa fa-trash cmdDelete"></i></span></li>
+                                    <li><input class="main-category" type="radio" name="MAINCATEGORY"><label>Bankacılık Hizmetleri</label><span><i class="fa fa-pencil-square cmdEdit"></i> <i class="fa fa-trash cmdDelete"></i></span></li>
+                                    <li><input class="main-category" type="radio" name="MAINCATEGORY"><label>Piyasa Veri &amp; Bilgileri</label><span><i class="fa fa-pencil-square cmdEdit"></i> <i class="fa fa-trash cmdDelete"></i></span></li>
+                                    <li><input class="main-category" type="radio" name="MAINCATEGORY"><label>İşlem Ücretleri</label><span><i class="fa fa-pencil-square cmdEdit"></i> <i class="fa fa-trash cmdDelete"></i></span></li>
+                                    <li><input class="main-category" type="radio" name="MAINCATEGORY"><label>Seyahat</label><span><i class="fa fa-pencil-square cmdEdit"></i> <i class="fa fa-trash cmdDelete"></i></span></li>
+                                    <li><input class="main-category" type="radio" name="MAINCATEGORY"><label>Profesyonel Hizmetler</label><span><i class="fa fa-pencil-square cmdEdit"></i> <i class="fa fa-trash cmdDelete"></i></span></li>
+                                    <li><input class="main-category" type="radio" name="MAINCATEGORY"><label>Sarf Malzemeler ve Genel Hizmetler</label><span><i class="fa fa-pencil-square cmdEdit"></i> <i class="fa fa-trash cmdDelete"></i></span></li>
+                                    <li><input class="main-category" type="radio" name="MAINCATEGORY"><label>İletişim ve Pazarlama</label><span><i class="fa fa-pencil-square cmdEdit"></i> <i class="fa fa-trash cmdDelete"></i></span></li>
+                                    <li><input class="main-category" type="radio" name="MAINCATEGORY"><label>Sigorta</label><span><i class="fa fa-pencil-square cmdEdit"></i> <i class="fa fa-trash cmdDelete"></i></span></li>
+                                    <li><input class="main-category" type="radio" name="MAINCATEGORY"><label>Yeniden Faturalanan Harcamalar</label><span><i class="fa fa-pencil-square cmdEdit"></i> <i class="fa fa-trash cmdDelete"></i></span></li>
+                                    <li><input class="main-category" type="radio" name="MAINCATEGORY"><label>Üretim</label><span><i class="fa fa-pencil-square cmdEdit"></i> <i class="fa fa-trash cmdDelete"></i></span></li>
+                                    <li><input class="main-category" type="radio" name="MAINCATEGORY"><label>Dağıtılamayan Harcamalar</label><span><i class="fa fa-pencil-square cmdEdit"></i> <i class="fa fa-trash cmdDelete"></i></span></li>
+                                    <li><input class="main-category" type="radio" name="MAINCATEGORY"><label>Non procurable</label><span><i class="fa fa-pencil-square cmdEdit"></i> <i class="fa fa-trash cmdDelete"></i></span></li>
+                                    <li><input class="main-category" type="radio" name="MAINCATEGORY"><label>yeni</label><span><i class="fa fa-pencil-square cmdEdit"></i> <i class="fa fa-trash cmdDelete"></i></span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
